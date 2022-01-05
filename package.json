@@ -41,5 +41,5 @@
     "url": "https://github.com/pawannehate/AzureNodeRedWebApp/issues"
   },
   "homepage": "https://github.com/pawannehate/AzureNodeRedWebApp#readme",
-  "engines": {"node":">=16.13.0", "npm":">=8.3.0"}
+  "engines": {"node":">=16.13.0", "npm":">=8.1.0"}
 }
