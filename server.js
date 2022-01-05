@@ -3,6 +3,7 @@ process.env.Path = 'D:\\Program Files\\Git\\cmd;D:\\Program Files\\Git\\usr\\bin
 //jshint esversion:6
 var express = require("express");
 var RED=require('node-red');
+var embeddedStart = require('node-red-embedded-start');
 var app= express();
  var http=require('http');
 
@@ -20,7 +21,7 @@ app.use(settings.httpNodeRoot,RED.httpNode);
 console.log(`listening port:${settings.uiPort}`);
 //RED.start();
 
-var embeddedStart = require('node-red-embedded-start');
+
 embeddedStart.inject(RED);
  
 // then use RED.start() just as you would normally
