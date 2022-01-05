@@ -18,5 +18,15 @@ app.use(settings.httpNodeRoot,RED.httpNode);
  
  server.listen(settings.uiPort);
 console.log(`listening port:${settings.uiPort}`);
-RED.start();
+//RED.start();
+
+var embeddedStart = require('node-red-embedded-start');
+embeddedStart.inject(RED);
+ 
+// then use RED.start() just as you would normally
+RED.start().then((result) => {
+    RED.node.getFlow('94912f4c.1d8c2');
+}).catch((err) => {
+    // same as above example
+});
 
