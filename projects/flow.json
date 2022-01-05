@@ -1,0 +1,109 @@
+[
+    {
+        "id": "94912f4c.1d8c2",
+        "type": "tab",
+        "label": "NoderedFlow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f1b3c437.669368",
+        "type": "inject",
+        "z": "94912f4c.1d8c2",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "3f6fb5b0.b6e21a"
+            ]
+        ]
+    },
+    {
+        "id": "3f6fb5b0.b6e21a",
+        "type": "function",
+        "z": "94912f4c.1d8c2",
+        "name": "addition function",
+        "func": "var  a=10;\nvar b=30;\nvar c=a-b;\n msg.payload=c;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "f8247082.78a45"
+            ]
+        ]
+    },
+    {
+        "id": "f8247082.78a45",
+        "type": "debug",
+        "z": "94912f4c.1d8c2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 510,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cfefee4a.68f18",
+        "type": "inject",
+        "z": "94912f4c.1d8c2",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "fae8cf59.4e0dd"
+            ]
+        ]
+    },
+    {
+        "id": "fae8cf59.4e0dd",
+        "type": "function",
+        "z": "94912f4c.1d8c2",
+        "name": "addition function",
+        "func": "var  a=10;\nvar b=30;\nvar c=a-b;\n msg.payload=c;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 240,
+        "wires": [
+            [
+                "80bdb2b3.62159"
+            ]
+        ]
+    },
+    {
+        "id": "80bdb2b3.62159",
+        "type": "function",
+        "z": "94912f4c.1d8c2",
+        "name": "addition function",
+        "func": "var  a=10;\nvar b=30;\nvar c=a-b;\n msg.payload=c;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    }
+]
