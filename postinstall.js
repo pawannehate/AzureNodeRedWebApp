@@ -7,7 +7,7 @@ if (process.platform == 'win32') {
   command="postinstall.cmd";
 }//else{}
 
-/*const executedCommands = exec(command (error, stdout) => {
+/*const executedCommands = exec(command, (error, stdout) => {
     console.log(stdout);
     if (error) {
         throw error;
